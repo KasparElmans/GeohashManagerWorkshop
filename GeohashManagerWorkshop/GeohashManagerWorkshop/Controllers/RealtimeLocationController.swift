@@ -10,12 +10,42 @@ import CoreLocation
 
 public class RealtimeLocationController {
     
-    static public let notification = "nNewRealtimeLocationArrived"
+    public static let shared = RealtimeLocationController()
     
-    static public var realtimeLocation: CLLocation?
+    public let geohashManager = GeohashManager(notification: "geohashChangedOn25MeterLocationUpdate")
     
-    static public func updateNewLocation(_ location: CLLocation?) {
+    private init() { }
+    
+    public let notification = "nNewRealtimeLocationArrived"
+    
+    public var realtimeLocation: CLLocation?
+    
+    public func updateNewLocation(_ location: CLLocation?) {
         realtimeLocation = location
+        geohashManager.updateLocation(location)
         NotificationCenter.default.post(notification)
+    }
+}
+
+public class GeohashManager {
+    public let notification: String
+    
+    public private(set) var geohash5: String? {
+        didSet {
+            guard oldValue != geohash5 else { return }
+            NotificationCenter.default.post(notification)
+        }
+    }
+    
+    init(notification: String) {
+        self.notification = notification
+    }
+    
+    public func updateLocation(_ location: CLLocation?) {
+        guard let location = location else {
+            geohash5 = nil
+            return
+        }
+        geohash5 = Geohash.encode(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, length: 5)
     }
 }

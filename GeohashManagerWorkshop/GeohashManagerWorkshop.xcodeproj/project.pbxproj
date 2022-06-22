@@ -13,7 +13,7 @@
 		8FA03ADF2861BD510014CD36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA03ADD2861BD510014CD36 /* Main.storyboard */; };
 		8FA03AE12861BD530014CD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA03AE02861BD530014CD36 /* Assets.xcassets */; };
 		8FA03AE42861BD530014CD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA03AE22861BD530014CD36 /* LaunchScreen.storyboard */; };
-		8FA03AEF2861BD540014CD36 /* GeohashManagerWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03AEE2861BD540014CD36 /* GeohashManagerWorkshopTests.swift */; };
+		8FA03AEF2861BD540014CD36 /* GeohashManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03AEE2861BD540014CD36 /* GeohashManagerTests.swift */; };
 		8FA03AF92861BD540014CD36 /* GeohashManagerWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03AF82861BD540014CD36 /* GeohashManagerWorkshopUITests.swift */; };
 		8FA03AFB2861BD540014CD36 /* GeohashManagerWorkshopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03AFA2861BD540014CD36 /* GeohashManagerWorkshopUITestsLaunchTests.swift */; };
 		8FA03B092861BD6A0014CD36 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03B082861BD6A0014CD36 /* Geohash.swift */; };
@@ -21,6 +21,7 @@
 		8FA03B102861BD730014CD36 /* RealtimeLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03B0D2861BD730014CD36 /* RealtimeLocationController.swift */; };
 		8FA03B162861BDCB0014CD36 /* GoeHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03B132861BDCB0014CD36 /* GoeHashTests.swift */; };
 		8FA03B172861BDCB0014CD36 /* RealtimeLocationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03B152861BDCB0014CD36 /* RealtimeLocationControllerTests.swift */; };
+		8FA03B192861CBE10014CD36 /* GeohashManagerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03B182861CBE10014CD36 /* GeohashManagerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,7 @@
 		8FA03AE32861BD530014CD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FA03AE52861BD530014CD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FA03AEA2861BD540014CD36 /* GeohashManagerWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeohashManagerWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FA03AEE2861BD540014CD36 /* GeohashManagerWorkshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeohashManagerWorkshopTests.swift; sourceTree = "<group>"; };
+		8FA03AEE2861BD540014CD36 /* GeohashManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeohashManagerTests.swift; sourceTree = "<group>"; };
 		8FA03AF42861BD540014CD36 /* GeohashManagerWorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeohashManagerWorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA03AF82861BD540014CD36 /* GeohashManagerWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeohashManagerWorkshopUITests.swift; sourceTree = "<group>"; };
 		8FA03AFA2861BD540014CD36 /* GeohashManagerWorkshopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeohashManagerWorkshopUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		8FA03B0D2861BD730014CD36 /* RealtimeLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeLocationController.swift; sourceTree = "<group>"; };
 		8FA03B132861BDCB0014CD36 /* GoeHashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoeHashTests.swift; sourceTree = "<group>"; };
 		8FA03B152861BDCB0014CD36 /* RealtimeLocationControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeLocationControllerTests.swift; sourceTree = "<group>"; };
+		8FA03B182861CBE10014CD36 /* GeohashManagerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeohashManagerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,8 @@
 		8FA03AED2861BD540014CD36 /* GeohashManagerWorkshopTests */ = {
 			isa = PBXGroup;
 			children = (
-				8FA03AEE2861BD540014CD36 /* GeohashManagerWorkshopTests.swift */,
+				8FA03AEE2861BD540014CD36 /* GeohashManagerTests.swift */,
+				8FA03B182861CBE10014CD36 /* GeohashManagerIntegrationTests.swift */,
 				8FA03B142861BDCB0014CD36 /* ContollersTests */,
 				8FA03B122861BDCB0014CD36 /* ModelTests */,
 			);
@@ -326,7 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA03AEF2861BD540014CD36 /* GeohashManagerWorkshopTests.swift in Sources */,
+				8FA03B192861CBE10014CD36 /* GeohashManagerIntegrationTests.swift in Sources */,
+				8FA03AEF2861BD540014CD36 /* GeohashManagerTests.swift in Sources */,
 				8FA03B172861BDCB0014CD36 /* RealtimeLocationControllerTests.swift in Sources */,
 				8FA03B162861BDCB0014CD36 /* GoeHashTests.swift in Sources */,
 			);

@@ -14,27 +14,27 @@ class RealtimeLocationControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        RealtimeLocationController.realtimeLocation = nil
+        RealtimeLocationController.shared.realtimeLocation = nil
     }
 
     func test_init_noLocation() {
-        XCTAssertEqual(RealtimeLocationController.realtimeLocation, nil)
+        XCTAssertEqual(RealtimeLocationController.shared.realtimeLocation, nil)
     }
     
     func test_updateLocation() {
         let newLocation = CLLocation(latitude: 51.2231341, longitude: 26.29942442)
-        RealtimeLocationController.updateNewLocation(newLocation)
-        XCTAssertEqual(RealtimeLocationController.realtimeLocation, newLocation)
+        RealtimeLocationController.shared.updateNewLocation(newLocation)
+        XCTAssertEqual(RealtimeLocationController.shared.realtimeLocation, newLocation)
     }
     
     func test_postLocation() {
         let newLocation = CLLocation(latitude: 51.2231341, longitude: 26.29942442)
         
-        let observer = NotificationCenter.default.addObserver(RealtimeLocationController.notification) { _ in
-            XCTAssertEqual(RealtimeLocationController.realtimeLocation, newLocation)
+        let observer = NotificationCenter.default.addObserver(RealtimeLocationController.shared.notification) { _ in
+            XCTAssertEqual(RealtimeLocationController.shared.realtimeLocation, newLocation)
         }
         
-        RealtimeLocationController.updateNewLocation(newLocation)
+        RealtimeLocationController.shared.updateNewLocation(newLocation)
         NotificationCenter.default.removeObserver(observer)
     }
 }
