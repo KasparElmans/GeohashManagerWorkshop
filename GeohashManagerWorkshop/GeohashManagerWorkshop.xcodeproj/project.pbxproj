@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F8541FD289955A10046D8E0 /* LocationDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8541FC289955A10046D8E0 /* LocationDetector.swift */; };
 		8FA03AD82861BD510014CD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03AD72861BD510014CD36 /* AppDelegate.swift */; };
 		8FA03ADA2861BD510014CD36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03AD92861BD510014CD36 /* SceneDelegate.swift */; };
 		8FA03ADC2861BD510014CD36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA03ADB2861BD510014CD36 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F8541FC289955A10046D8E0 /* LocationDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetector.swift; sourceTree = "<group>"; };
 		8FA03AD42861BD510014CD36 /* GeohashManagerWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeohashManagerWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA03AD72861BD510014CD36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA03AD92861BD510014CD36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,12 +90,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F8541FA2899556C0046D8E0 /* Bonus (niet openen) */ = {
+			isa = PBXGroup;
+			children = (
+				8F8541FB289955910046D8E0 /* Nope */,
+			);
+			path = "Bonus (niet openen)";
+			sourceTree = "<group>";
+		};
+		8F8541FB289955910046D8E0 /* Nope */ = {
+			isa = PBXGroup;
+			children = (
+				8F8541FC289955A10046D8E0 /* LocationDetector.swift */,
+			);
+			path = Nope;
+			sourceTree = "<group>";
+		};
+		8F8541FE28995D400046D8E0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8FA03AD72861BD510014CD36 /* AppDelegate.swift */,
+				8FA03AD92861BD510014CD36 /* SceneDelegate.swift */,
+				8FA03ADB2861BD510014CD36 /* ViewController.swift */,
+				8FA03ADD2861BD510014CD36 /* Main.storyboard */,
+				8FA03AE02861BD530014CD36 /* Assets.xcassets */,
+				8FA03AE22861BD530014CD36 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		8FA03ACB2861BD510014CD36 = {
 			isa = PBXGroup;
 			children = (
 				8FA03AD62861BD510014CD36 /* GeohashManagerWorkshop */,
+				8F8541FE28995D400046D8E0 /* Support */,
 				8FA03AED2861BD540014CD36 /* GeohashManagerWorkshopTests */,
 				8FA03AF72861BD540014CD36 /* GeohashManagerWorkshopUITests */,
+				8F8541FA2899556C0046D8E0 /* Bonus (niet openen) */,
 				8FA03AD52861BD510014CD36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,15 +144,9 @@
 		8FA03AD62861BD510014CD36 /* GeohashManagerWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				8FA03AD72861BD510014CD36 /* AppDelegate.swift */,
-				8FA03AD92861BD510014CD36 /* SceneDelegate.swift */,
-				8FA03ADB2861BD510014CD36 /* ViewController.swift */,
-				8FA03ADD2861BD510014CD36 /* Main.storyboard */,
-				8FA03AE02861BD530014CD36 /* Assets.xcassets */,
-				8FA03AE22861BD530014CD36 /* LaunchScreen.storyboard */,
 				8FA03AE52861BD530014CD36 /* Info.plist */,
-				8FA03B072861BD6A0014CD36 /* Models */,
 				8FA03B0C2861BD730014CD36 /* Controllers */,
+				8FA03B072861BD6A0014CD36 /* Models */,
 				8FA03B0A2861BD730014CD36 /* Extensions */,
 			);
 			path = GeohashManagerWorkshop;
@@ -322,6 +349,7 @@
 				8FA03ADA2861BD510014CD36 /* SceneDelegate.swift in Sources */,
 				8FA03B102861BD730014CD36 /* RealtimeLocationController.swift in Sources */,
 				8FA03B092861BD6A0014CD36 /* Geohash.swift in Sources */,
+				8F8541FD289955A10046D8E0 /* LocationDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
