@@ -25,7 +25,7 @@ class GeohashManagerIntegrationTests: XCTestCase {
         NotificationCenter.default.removeObserver(observer)
     }
     
-    func createSUT() -> (realtimeLocationController: RealtimeLocationController, geohashManager: GeohashManager) {
+    func createSUT() -> (realtimeLocationController: RealtimeLocationController, geohashManager: LocationChecker<String>) {
         (RealtimeLocationController.shared, RealtimeLocationController.shared.geohashManager)
     }
 }

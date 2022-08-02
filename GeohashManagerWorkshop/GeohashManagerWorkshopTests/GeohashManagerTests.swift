@@ -11,7 +11,7 @@ import CoreLocation
 
 class GeohashManagerTests: XCTestCase {
 
-    func test_geohashManager_onInitGeohash5IsNil() {
+    func test_init_onInitGeohash5IsNil() {
         let sut = createSUT()
         XCTAssertEqual(sut.geohash5, nil)
     }
@@ -67,15 +67,4 @@ private extension CLLocation {
     static var stub: CLLocation {
         CLLocation(latitude: 51.83738, longitude: 12.98494)
     }
-}
-
-// GeohashManager
-// - [X] Elke locatie update, bereken een nieuwe geohash.
-// - [X] Als de locatie `nil` is dan moet de geohash5 ook `nil` zijn.
-// - [X] Als de geohash5 is verandert, post dan een notificatie.
-
-// Wat is de ahaa?
-
-func test_workshop_isAwesome() {
-    XCTAssert(true)
 }
